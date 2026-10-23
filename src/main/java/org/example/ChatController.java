@@ -17,9 +17,4 @@ public class ChatController {
     public String chat(@RequestBody String message) {
         return chatService.chat(message);
     }
-
-    @DeleteMapping
-    public void clearChat() {
-        chatService.clearHistory();
-    }
 }
